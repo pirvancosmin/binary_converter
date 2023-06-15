@@ -49,6 +49,9 @@
 .list {
   margin-bottom: 10px;
   color: rgb(10, 50, 80);
+  text-align: center;
+  font-weight: 645;
+  
 }
 
 ul li a {
