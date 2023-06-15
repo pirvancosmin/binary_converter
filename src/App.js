@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import DecimalTable from './components/DecimalTable';
@@ -7,11 +7,16 @@ import TextTable from './components/TextTable';
 import BinarToDec from './components/BinarToDec';
 
 function App() {
+  useEffect(() => {
+    document.title = 'Binary Converter';
+  }, []);
+
   const [isHidden, setIsHidden] = useState(false);
 
   const handleClick = () => {
     setIsHidden(true);
   };
+
 
   return (
     <div>
