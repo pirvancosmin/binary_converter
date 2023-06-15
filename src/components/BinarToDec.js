@@ -13,7 +13,7 @@ const BinarToDec = () => {
         let nr = parseInt(inputNr);
         let result = 0;
         let power = 1;
-        while (nr != 0) {
+        while (nr !== 0) {
             let x = nr % 10;
             result = result + x * power;
             power = power * 2;
