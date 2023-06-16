@@ -26,13 +26,13 @@ function App() {
           <h2 className='text'>Select one from those three options to convert:</h2>
           <ul className='unlist'>
             <li className='list'>
-              <Link to="/DecimalTable" onClick={handleClick}>Decimal number to Binary number</Link>
+              <Link to="/DecimalTable" onClick={handleClick}>- Decimal number to Binary number -</Link>
             </li>
             <li className='list'>
-              <Link to="/TextTable" onClick={handleClick}>Text number to Binary number</Link>
+              <Link to="/TextTable" onClick={handleClick}>- Text number to Binary number -</Link>
             </li>
             <li className='list'>
-              <Link to="/BinarToDec" onClick={handleClick}>Binary number to Decimal number</Link>
+              <Link to="/BinarToDec" onClick={handleClick}>- Binary number to Decimal number -</Link>
             </li>
             <hr />
           </ul>

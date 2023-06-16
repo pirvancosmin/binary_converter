@@ -84,6 +84,18 @@ h2 {
   color: rgb(10, 50, 80);
   text-decoration: none;
 }
+@media screen and (max-height: 625px) {
+  .title {
+    padding: 1%;
+  }
+}
+@media screen and (max-height: 600px) {
+  .title {
+    padding: 1%;
+    border: none;
+  }
+}
+
 .title:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
