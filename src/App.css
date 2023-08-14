@@ -108,8 +108,14 @@ h2 {
 .butt {
   border-radius: 5px;
   color: rgb(10, 50, 80);
+  background-color: #f6f9fa;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .butt:hover {
   cursor: pointer;
+  background-color: #e0ecf0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }

@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import DecimalTable from './components/DecimalTable';
 import TextTable from './components/TextTable';
 import BinarToDec from './components/BinarToDec';
+import BinarToText from './components/BinarToText';
 
 function App() {
   useEffect(() => {
@@ -26,13 +27,16 @@ function App() {
           <h2 className='text'>Select one from those three options to convert:</h2>
           <ul className='unlist'>
             <li className='list'>
-              <Link to="/DecimalTable" onClick={handleClick}>- Decimal number to Binary number -</Link>
+              <Link to="/DecimalTable" onClick={handleClick}>- Decimal to Binary -</Link>
             </li>
             <li className='list'>
-              <Link to="/TextTable" onClick={handleClick}>- Text number to Binary number -</Link>
+              <Link to="/TextTable" onClick={handleClick}>- Text to Binary -</Link>
             </li>
             <li className='list'>
-              <Link to="/BinarToDec" onClick={handleClick}>- Binary number to Decimal number -</Link>
+              <Link to="/BinarToDec" onClick={handleClick}>- Binary to Decimal -</Link>
+            </li>
+            <li className='list'>
+              <Link to="/BinarToText" onClick={handleClick}>- Binary to text -</Link>
             </li>
             <hr />
           </ul>
@@ -49,6 +53,7 @@ function App() {
             <Route path="/DecimalTable" element={<DecimalTable />} />
             <Route path="/TextTable" element={<TextTable />} />
             <Route path="/BinarToDec" element={<BinarToDec />} />
+            <Route path='/BinarToText' element={<BinarToText />} />
           </Routes>
         </div>
       </Router>
